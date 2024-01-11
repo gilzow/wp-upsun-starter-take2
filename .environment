@@ -1,0 +1,15 @@
+# Set database environment variables
+export DB_HOST="$MARIADB_HOST"
+export DB_PORT="$MARIADB_PORT"
+export DB_PATH="$MARIADB_PATH"
+export DB_USERNAME="$MARIADB_USERNAME"
+export DB_PASSWORD="$MARIADB_PASSWORD"
+export DB_SCHEME="$MARIADB_SCHEME"
+export DATABASE_URL="${DB_SCHEME}://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_PATH}"
+
+#map to names wordpress/wp-starter is expecting
+export WP_ENVIRONMENT_TYPE="${PLATFORM_ENVIRONMENT_TYPE}"
+export DB_NAME="${DB_PATH}"
+export DB_USER="$DB_USERNAME"
+export WP_HOME=$(echo "$PLATFORM_ROUTES" | base64 --decode | jq -r 'to_entries[]|select(.value.type=="upstream") | select(.value.original_url=="https://{default}/")|.key')
+
