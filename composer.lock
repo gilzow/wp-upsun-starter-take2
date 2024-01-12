@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6f7da2733c4d07fc032ceb909320521",
+    "content-hash": "f85ed6e3a62e44fc2ebb13174b0c339f",
     "packages": [
         {
             "name": "composer/installers",
@@ -428,7 +428,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.1.4",
+            "version": "6.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -459,7 +459,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/6.3.2"
+                "source": "https://github.com/roots/wordpress/tree/6.4.2"
             },
             "funding": [
                 {
@@ -542,22 +542,22 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.1.4",
+            "version": "6.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.1.4"
+                "reference": "6.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.1.4-no-content.zip",
-                "shasum": "9dd4d9da8f3d4980652f32978b1d5c6d70553288"
+                "url": "https://downloads.wordpress.org/release/wordpress-6.4.2-no-content.zip",
+                "shasum": "77d5fc8e5535fc2c63c1c6ae0c4763aad10ac8e7"
             },
             "require": {
-                "php": ">= 5.6.20"
+                "php": ">= 7.0.0"
             },
             "provide": {
-                "wordpress/core-implementation": "6.1.4"
+                "wordpress/core-implementation": "6.4.2"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -608,7 +608,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2023-10-12T20:42:06+00:00"
+            "time": "2023-12-06T16:27:40+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -921,12 +921,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "3aeeaaaaf57836ed6184047f88f744db41e8922d"
+                "reference": "c892bcc085a40eaa63e195cabdab5a7558c1b1c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/3aeeaaaaf57836ed6184047f88f744db41e8922d",
-                "reference": "3aeeaaaaf57836ed6184047f88f744db41e8922d",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/c892bcc085a40eaa63e195cabdab5a7558c1b1c0",
+                "reference": "c892bcc085a40eaa63e195cabdab5a7558c1b1c0",
                 "shasum": ""
             },
             "conflict": {
@@ -1183,7 +1183,7 @@
                 "kelvinmo/simplexrd": "<3.1.1",
                 "kevinpapst/kimai2": "<1.16.7",
                 "khodakhah/nodcms": "<=3",
-                "kimai/kimai": "<=2.1",
+                "kimai/kimai": "<2.1",
                 "kitodo/presentation": "<3.2.3|>=3.3,<3.3.4",
                 "klaviyo/magento2-extension": ">=1,<3",
                 "knplabs/knp-snappy": "<=1.4.2",
@@ -1642,7 +1642,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-11T20:04:14+00:00"
+            "time": "2024-01-12T17:04:19+00:00"
         }
     ],
     "aliases": [],
