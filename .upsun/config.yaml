@@ -20,7 +20,7 @@ applications:
     # More information: https://docs.upsun.com/create-apps/app-reference.html#relationships
     relationships:
       mariadb: "mariadb:mysql"
-      
+
 
     # Mounts define directories that are writable after the build is complete.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#mounts
@@ -51,9 +51,9 @@ applications:
       locations:
         "/":
           passthru: "/index.php"
-          root: ""
-          
-        
+          root: "public"
+
+
 
     # Alternate copies of the application to run as background processes.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#workers
@@ -79,16 +79,16 @@ applications:
     # Specifies a default set of build tasks to run. Flavors are language-specific.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#build
     build:
-      flavor: none
+      flavor: composer
 
     # Installs global dependencies as part of the build process. They’re independent of your app’s dependencies and
     # are available in the PATH during the build process and in the runtime environment. They’re installed before
     # the build hook runs using a package manager for the language.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#dependencies
-    # dependencies:
-    #   php: # Specify one Composer package per line.
-    #     drush/drush: '8.0.0'
-    #     composer/composer: '^2'
+    dependencies:
+      php: # Specify one Composer package per line.
+        wp-cli/wp-cli-bundle: "^2.4.0"
+        composer/composer: '^2'
 
     # Hooks allow you to customize your code/environment as the project moves through the build and deploy stages
     # More information: https://docs.upsun.com/create-apps/app-reference.html#hooks
@@ -100,7 +100,7 @@ applications:
         
         # Add build steps here.
         # echo 'I am a build step'
-        
+
       # The deploy hook is run after the app container has been started, but before it has started accepting requests.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#deploy-hook
       deploy: |
@@ -132,7 +132,7 @@ services:
   mariadb:
     type: mariadb:11.0 # All available versions are: 11.0, 10.11, 10.6, 10.5, 10.4, 10.3
 
-  
+
 
 # The routes of the project.
 #
