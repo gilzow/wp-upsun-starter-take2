@@ -25,7 +25,7 @@ applications:
     # Mounts define directories that are writable after the build is complete.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#mounts
     mounts:
-      "web/wp-content/uploads":
+      "public/wp-content/uploads":
         source: storage
         source_path: "uploads"
 
