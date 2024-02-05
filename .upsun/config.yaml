@@ -26,7 +26,7 @@ applications:
     # More information: https://docs.upsun.com/create-apps/app-reference.html#mounts
     mounts:
       "web/wp-content/uploads":
-        source: local
+        source: storage
         source_path: "uploads"
 
     # The web key configures the web server running in front of your app.
