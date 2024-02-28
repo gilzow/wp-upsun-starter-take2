@@ -20,6 +20,7 @@ applications:
     # More information: https://docs.upsun.com/create-apps/app-reference.html#relationships
     relationships:
       mariadb: "mariadb:mysql"
+      myoracle: "myoracle:mysql"
 
 
     # Mounts define directories that are writable after the build is complete.
@@ -133,7 +134,9 @@ services:
   mariadb:
     type: mariadb:11.0 # All available versions are: 11.0, 10.11, 10.6, 10.5, 10.4, 10.3
 
-
+  myoracle:
+    type: oracle-mysql:8.0
+    disk: 256
 
 # The routes of the project.
 #
