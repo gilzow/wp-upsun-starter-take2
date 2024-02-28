@@ -136,7 +136,6 @@ services:
 
   myoracle:
     type: oracle-mysql:8.0
-    disk: 256
 
 # The routes of the project.
 #
