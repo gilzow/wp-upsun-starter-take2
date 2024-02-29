@@ -21,7 +21,7 @@ applications:
     relationships:
       mariadb: "mariadb:mysql"
       myoracle: "myoracle:mysql"
-
+      postgresql: "postgresql:postgresql"
 
     # Mounts define directories that are writable after the build is complete.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#mounts
@@ -137,6 +137,8 @@ services:
   myoracle:
     type: oracle-mysql:8.0
 
+  postgresql:
+    type: postgresql:15
 # The routes of the project.
 #
 # Each route describes how an incoming URL is going
