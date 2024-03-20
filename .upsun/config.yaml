@@ -133,9 +133,6 @@ applications:
 services:
   mariadb:
     type: mariadb:11.2 # All available versions are: 11.0, 10.11, 10.6, 10.5, 10.4, 10.3
-    configuration:
-      properties:
-        max_connections: 240
 
   myoracle:
     type: oracle-mysql:8.0
